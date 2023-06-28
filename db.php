@@ -1,9 +1,9 @@
 <?php
 class DB {
     private $servername = "localhost";
-    private $username = "root";
-    private $password = "1um2dois";
-    private $dbname = "bdUsuario";
+    private $username = "usuario_BD";
+    private $password = "senha";
+    private $dbname = "nome_BD";
     private $conn;
 
     public function __construct() {
