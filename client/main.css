@@ -1,0 +1,139 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --background: #ffffff;
+    --color-main-one: #0d2bd4d3;
+    --color-main-two: #04be0e;
+    --color-main-tree: #afacacab;
+    --color-main-four: #bd0e0e;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--background);
+}
+
+.container h1 {
+    margin: 1rem;
+}
+
+.container strong {
+    color: var(--color-main-one);
+}
+
+#container-add {
+    display: grid;
+    justify-items: center;
+}
+
+.container-add input {
+    margin: .5rem;
+    padding: .7rem;
+    font-size: 1rem;
+    border-radius: .5rem;
+}
+
+.container-add button {
+    padding: .5rem;
+    font-size: 1rem;
+    background-color: var(--color-main-two);
+    border-radius: .5rem;
+    cursor: pointer;
+}
+
+.container-add button:hover {
+    background-color: var(--color-main-tree);
+}
+
+#container-update {
+    display: none;
+}
+
+.container-update input {
+    margin: .5rem;
+    padding: .7rem;
+    font-size: 1rem;
+    border-radius: .5rem;
+}
+
+.container-update button {
+    padding: .5rem;
+    font-size: 1rem;
+    background-color: var(--color-main-two);
+    border-radius: .5rem;
+    cursor: pointer;
+}
+
+.container-update button:hover {
+    background-color: var(--color-main-tree);
+}
+
+.container-registros {
+    font-weight: bold;
+}
+
+.container-registros h2 {
+    margin: 1rem;
+}
+
+.container-registros ul {
+    list-style: none;
+}
+
+.container-registros li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1rem;
+    padding: 1.5rem;
+    box-shadow: 1rem .5rem 1rem .5rem rgba(0, 0, 0, 0.6);
+    border-radius: .5rem;
+}
+
+.container-registros i {
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.container-registros button {
+    border: none;
+    background: none;
+}
+
+.bx-edit {
+    margin: 0 .3rem;
+    color: var(--color-main-two);
+}
+
+.bx-message-square-x {
+    margin: 0 .3rem;
+    color: var(--color-main-four);
+}
+
+.bx-add-to-queue {
+    margin: 0 .9rem;
+    color: var(--color-main-one);
+}
+
+@media (max-width: 950px) {
+    .container-registros li {
+        margin: .7rem;
+        padding: 1rem;
+        font-size: .8rem;
+    }
+
+    .container-registros i {
+        font-size: 1.2rem;
+    }
+
+    .container-registros h2 {
+        font-size: 1.4rem;
+    }
+
+}
